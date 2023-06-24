@@ -18,7 +18,7 @@ void print_diagonal(int n)
 	}
 	else
 	{
-	fpr (x = 0; y < n; x++)
+	for (x = 0; y < n; x++)
 	{
 	for (y = 0; y < x; y++)
 	{
