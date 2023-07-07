@@ -4,7 +4,7 @@
 #include <ctype.h>
 #include <string.h>
 
-void _puts(char *s)
+char *_memset(char *s, char b, unsigned int n)
 {
-    puts(s);
+    return memset(s, b, n);
 }

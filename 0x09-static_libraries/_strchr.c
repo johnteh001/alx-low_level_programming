@@ -4,7 +4,7 @@
 #include <ctype.h>
 #include <string.h>
 
-void _puts(char *s)
+char *_strchr(char *s, char c)
 {
-    puts(s);
+    return strchr(s, c);
 }

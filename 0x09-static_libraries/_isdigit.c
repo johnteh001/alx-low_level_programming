@@ -4,7 +4,7 @@
 #include <ctype.h>
 #include <string.h>
 
-void _puts(char *s)
+int _isdigit(int c)
 {
-    puts(s);
+    return isdigit(c);
 }

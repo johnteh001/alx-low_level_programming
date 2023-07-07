@@ -1,10 +1,9 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
 
-void _puts(char *s)
+int _strlen(char *s)
 {
-    puts(s);
+    return strlen(s);
 }
