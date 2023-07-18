@@ -10,11 +10,11 @@
  * Description: This structure represents a dog and
  * contains its name, age, and owner.
  */
-struct dog
+typedef struct dog
 {
 	char *name;
 	float age;
 	char *owner;
-};
-void print_dog(struct dog *d);
+} dog_t;
+void print_dog(dog_t *d);
 #endif /* DOG_H */
