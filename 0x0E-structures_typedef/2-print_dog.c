@@ -6,8 +6,8 @@
  * @d: Pointer to the struct dog to be printed
  *
  * Description: This function prints the details of a dog, including its name,
- *              age, and owner. If any element of the dog is NULL, (nil) is printed
- *              in place of that element.
+ *              age, and owner. If any element of the dog is NULL, (nil) is
+ *              printed in place of that element.
  */
 void print_dog(struct dog *d)
 {
