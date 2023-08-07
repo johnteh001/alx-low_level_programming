@@ -5,8 +5,8 @@
 
 #define BUF_SIZE 1024
 /**
- * print_error_and_exit - Prints an error message and exits the program with the specified code.
- *
+ * print_error_and_exit - Prints an error message and exits
+ * the program with the specified code.
  * @code: The exit code to be used when terminating the program.
  * @message: The format string for the error message.
  * @file: The name of the file associated with the error.
