@@ -2,30 +2,20 @@
 #include<string.h>
 #include<stdio.h>
 #include "lists.h"
-list_t *add_node(list_t **head, const char *str)
+/**
+ * list_len - Returns the number of elements in a linked list_t list.
+ * @h: A pointer to the head of the linked list.
+ *
+ * Return: The number of elements in the linked list.
+ */
+size_t list_len(const list_t *h)
 {
-	char *dup;
-	int len;
-	list_t *new;
+	size_t count = 0;
 
-	new = malloc(sizeof(list_t));
-	if (new == NULL)
-		return (NULL);
-	dup = strdup(str);
-	if (dup == NULL)
+	while (h != NULL)
 	{
-		free(new);
-		return (NULL);
+		count++;
+		h = h->next;
 	}
-
-	for (len = 0; str[len];)
-		len++;
-
-	new - > str = dup;
-	new - > len = len;
-	new - > next = *head;
-
-	*head = new;
-
-	return (new);
+	return (count);
 }
